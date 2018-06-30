@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Saira', sans-serif;
+	background: #d5dae5; /* Màu nên tổng thể */
+	width: 100%;
+}
+a {outline: none;}
+/* CSS side-nav */
+.side-nav {
+	float: left;
+	width: 15%;
+	height: 100%;
+	position: fixed; /* Giữ menu trái cố định */
+	background: #424f5a; /* màu nền của menu left */
+}
+.side-nav .logo {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #424f5a; /* Màu nền của logo */
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* CSS Navigation Left */
+ul { margin: 0; padding: 0;}
+ul li { position: relative;}
+ul li a.active {
+	border-left: 3px solid #ff9500; /* màu viền trái */
+	background: #233245; /* Màu nền thẻ a khi được chọn */
+}
+ul li a.active:hover {background: #233245}
+ul li a {
+    display: block;
+    color: #fff;
+    padding: 16px 16px;
+    text-align: left;
+    text-decoration: none;
+}
+ul li a:hover {
+	background: #5E6972;
+}
+
+/* CSS main-content */
+.main-content {
+	float: right;
+	width: 85%;
+	background: #fff;
+}
+
+/* CSS Header */
+.header {
+	height: 50px;
+	background: #233245; /* Màu nền của phần đầu */
+}
+.header span {
+	line-height: 50px;
+	color: #fff;
+	float: right;
+	margin-right: 10px;
+}
+
+/* CSS Main */
+.main {margin: 10px;}
+
+/* CSS TABLE */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+}
+td, th {
+    padding: 0.75em 0.5em; /* Độ rộng của dòng */
+    text-align: left;
+}
+td a, th a, tr a {
+	text-decoration: none;
+}
+th a {color: #fff;}
+th a:hover, td a:hover {text-decoration: underline;}
+th a:visited {color: #fff;}
+td a:visited {color: blue;}
+
+th {
+    background-color: #31bc86; /* Màu xanh viền của table */
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+tbody th {
+	background-color: #2ea879; /* Màu viên xanh của th trong tbody (phần id đầu dòng) */
+}
+tbody tr:nth-child(2n-1) {
+    background: #f5f5f5; /* Màu nền của dòng số lẻ */
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: rgba(129,208,177,.3); /* Màu nền của dòng khi hover */
+}
+input[type=text], input[type=password] {
+    width: 50%;	/* Độ rộng của text box */
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #ccc; /* Màu viền của text box */
+    box-sizing: border-box;
+}
